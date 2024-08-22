@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escala de Jogadores para Times:</h1>
+    <hr>
+
+    <div class="inputs-container">
+        <h2>Escalar Jogador:</h2>
+        <ul class="inputs">
+        <label for="posicao">Posição do Jogador:</label>
+        <input class="posicao" type="text" name="posicao" id="posicao">
+        <label for="nome">Nome:</label>
+        <input class="nome" type="text" name="nome" id="nome">
+        <label for="numero">Número da Camisa:</label>
+        <input class="numero" type="text" name="numero" id="numero">
+        <button class="escalar-button" onclick = "escalar()" >Escalar</button>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Remover Jogador:</h2>
+        <ul class="inputs-container2">
+        <label for="numeroRemove">Número da Camisa:</label>
+        <input type="text" name="numeroRemove" id="numeroRemove">
+        <button class="remover-button" onclick="remover()">Remover</button>
+        </ul>
+    </div>
+
+    <div>
+    <h2>Time:</h2>
+    <ul id="time"></ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

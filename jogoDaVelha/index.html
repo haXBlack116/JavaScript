@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="title">
+    <h1>Jogo da Velha</h1>
+    <h2>Escolha o nome dos Players:</h2>
+    </div>
+
+    <div id="players">
+        <label for="player1">Player1:</label>
+        <input type="text" name="player1" id="player1">
+        <label for="player2">Player2:</label>
+        <input type="text" name="player2" id="player2">
+        <button id="startbtn">Começar Jogo</button>
+    </div>
+
+    <div id="game-container">
+        <div class="game-wrapper">
+            <div class="players-container">
+                <div class="players-square">
+                    <ul id="players-ul"></ul>
+                </div>
+                <div class="players-square2"></div>
+                <button id="restartbtn">Jogar Novamente</button>
+            </div>
+            <div id="game-board">
+                <div id="keys">
+                    <button class="charKey-1" data-value="1"></button>
+                    <button class="charKey-2" data-value="2"></button>
+                    <button class="charKey-3" data-value="3"></button>
+                    <button class="charKey-4" data-value="4"></button>
+                    <button class="charKey-5" data-value="5"></button>
+                    <button class="charKey-6" data-value="6"></button>
+                    <button class="charKey-7" data-value="7"></button>
+                    <button class="charKey-8" data-value="8"></button>
+                    <button class="charKey-9" data-value="9"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
