@@ -1,0 +1,14 @@
+{
+  "name": "datascomdayjs",
+  "version": "1.0.0",
+  "description": "Teste da biblioteca DayJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bernardo",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.12"
+  }
+}
