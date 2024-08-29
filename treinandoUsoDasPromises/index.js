@@ -2,7 +2,7 @@ function imc(peso, altura) {
     const p = new Promise((resolve, reject) => {
         console.log("O IMC está sendo calculado...")
         setTimeout(() => {
-            if (isNaN(peso) && isNaN(altura)) {
+            if (isNaN(peso) || isNaN(altura)) {
                 reject("Os dados precisam ser do tipo number!")
             }else{
             resolve(calculateIMC(peso, altura))
@@ -40,7 +40,7 @@ process.stdin.once('data', (data) => {
 
     const p = imc(peso, altura)
     p.then((result) => {
-      console.log(`O IMC foi calculado. Você está com o IMC: ${result}`)
+      console.log(`O IMC foi calculado | Situação: ${result}`)
       process.exit()
     }).catch((error) => {
       console.error(error)
